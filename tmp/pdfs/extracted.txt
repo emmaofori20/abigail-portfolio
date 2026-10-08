@@ -1,0 +1,505 @@
+=== PDF PAGE 1 ===
+    RESEARCH PORTFOLIO
+
+                Abigail A. Adjetey Bisa
+
+         Remote Sensing  | GIS  | Artificial Intelligence  | Agricultural & Environmental Applications
+
+
+                MSc Geo-Information Science for Natural Resources Management
+                 Kwame Nkrumah University of Science and Technology, Ghana
+
+
+
+
+
+Email: abigailadjeleyadjeteybisa@gmail.com | LinkedIn: linkedin.com/in/abigail-adjeley-adjetey-bisa-b885a5216
+=== PDF PAGE 2 ===
+Research Profile
+
+My research interests lie at the intersection of remote sensing, geographic information science, and artificial intelligence
+for agricultural and environmental applications. My experience includes UAV multispectral remote sensing for crop
+nutrient assessment, satellite-based land-use/land-cover classification, deep learning for satellite image classification,
+and GIS-based analysis of cocoa agroforestry landscapes. Across these projects, I have worked with field and reference
+data, satellite and UAV imagery, spatial data processing, machine-learning and deep-learning methods, and the
+production of spatially explicit outputs for environmental and agricultural decision-making.
+
+
+
+Research Themes
+
+Remote Sensing
+Satellite and UAV multispectral imagery, image processing, vegetation indices, and time-series analysis.
+
+Geospatial AI
+Machine learning and deep learning for classification, prediction, and spatially explicit environmental applications.
+
+Agricultural Applications
+Crop nutrition, cocoa agroforestry, precision agriculture, and landscape monitoring.
+
+Environmental Applications
+Deforestation monitoring, land use/land cover mapping, and sustainable land management.
+
+
+
+Research Trajectory
+
+My research trajectory has progressively developed from field-based environmental data collection and GIS analysis
+toward increasingly integrated Earth observation and AI workflows. This progression has provided experience across the
+full research chain: field data collection → remote sensing → geospatial processing → machine learning/deep learning →
+spatial prediction and decision-support products.
+
+
+
+
+
+                                      Abigail A. Adjetey Bisa / Research Portfolio/ 2
+=== PDF PAGE 3 ===
+Selected Research Experience
+
+ Research project                  Core methods                  My contribution
+
+ Cocoa nutrient assessment (MSc)    UAV multispectral imagery;          Developed and evaluated predictive
+                                       vegetation indices; machine learning  models for cocoa foliar N, P and K
+                                                                           using UAV-derived spectral
+                                                                              information.
+
+ Deforestation-Free Cocoa               Satellite time series; CNN/deep        Led/participated in field training-
+                                          learning; ML classification; Python     data collection and developed
+                                                                                          satellite classification models for
+                                                                                      historical landscape mapping.
+
+ Shade characterisation in cocoa       Sentinel-2; spectral/texture/         Worked on the remote-sensing and
+ agroforestry                          biophysical predictors; Random       geospatial component used to
+                                      Forest                                   classify cocoa farms by shade level.
+
+ High Forest Zone LULC work            Satellite remote sensing; GIS;         Executed the LULC/remote-sensing
+                                         reference/training data;             work assigned by my supervisor
+                                           classification                          within the broader research project.
+
+Attribution principle: the portfolio distinguishes the broader project from my individual contribution. Work performed
+by supervisors, co-authors, or other team members is not presented as my own.
+
+
+
+Research Skills Demonstrated Across Projects
+
+•   Earth observation data acquisition, preprocessing and analysis
+•  UAV multispectral data processing and interpretation
+•   Satellite image time-series analysis
+•   Machine learning and deep learning for geospatial data
+•   Raster and vector GIS analysis
+•   Spatial interpolation and geostatistical analysis
+•   Field data collection and ground/reference data generation
+•   Scientific writing, research communication and publication
+
+
+
+
+
+                                      Abigail A. Adjetey Bisa / Research Portfolio/ 3
+=== PDF PAGE 4 ===
+PROJECT 1
+UAV Multispectral Remote Sensing and Machine
+Learning for Cocoa Nutrient Assessment
+
+MSc research | Juaboso cocoa landscape, Western North, Ghana
+
+Research Context
+Cocoa production in Ghana faces challenges associated with declining soil fertility and the limitations of blanket fertilizer
+recommendations. My MSc research investigated the use of UAV-based multispectral remote sensing and machine-
+learning approaches to assess cocoa foliar nitrogen (N), phosphorus (P), and potassium (K), while also examining
+relationships between soil and leaf nutrient concentrations. This research was one component of a broader project,
+FRAME-Cocoa Project, sponsored by African Plant Nutrition Institute (APNI).
+
+Research Focus
+The thesis had two linked objectives: (1) to quantify relationships between soil and leaf N, P and K concentrations; and
+(2) to develop predictive models for cocoa leaf nutrient concentrations using spectral bands and derived vegetation
+indices. The study was positioned as a contribution to precision agriculture and spatially informed nutrient assessment.
+
+Research Question
+Can UAV multispectral imagery and machine-learning models be used to estimate cocoa leaf nitrogen (N), phosphorus
+(P), and potassium (K) concentrations and produce continuous spatial predictions across a cocoa production
+landscape?
+
+Data and Remote Sensing Platform
+•   DJI Matrice 350 RTK UAV, operated at 150 m altitude and 3 m/s with 65% image overlap.
+•   MicaSense RedEdge-P multispectral sensor with Blue (475 nm), Green (560 nm), Red (668 nm), Red Edge (717 nm),
+   and NIR (842 nm) bands.
+•   Blue, Green, Red, Red Edge and NIR bands and derived vegetation indices.
+•   59 composite soil samples/field sampling locations.
+•   Ground-truth soil and foliar N, P and K measurements used for model development and evaluation.
+
+
+
+
+
+                                      Abigail A. Adjetey Bisa / Research Portfolio/ 4
+=== PDF PAGE 5 ===
+PROJECT 1
+UAV Multispectral Remote Sensing and Machine
+Learning for Cocoa Nutrient Assessment
+
+
+
+
+
+           Figure 1. Map of study area displaying UAV orthomosaic of selected farm site under investigation.
+
+
+
+
+
+                                      Abigail A. Adjetey Bisa / Research Portfolio/ 5
+=== PDF PAGE 6 ===
+PROJECT 1
+UAV Multispectral Remote Sensing and Machine
+Learning for Cocoa Nutrient Assessment
+
+Methods and modelling
+
+Analytical Workflow
+
+
+
+
+
+                                      Abigail A. Adjetey Bisa / Research Portfolio/ 6
+=== PDF PAGE 7 ===
+Remote Sensing and Data Processing
+
+    •   Imagery was radiometrically corrected using the MicaSense calibration panel and processed in Agisoft
+       Metashape to generate a 0.09 m GSD orthomosaic.
+    •   Spectral bands and vegetation indices were derived to represent canopy spectral behaviour, chlorophyll-
+        related properties and vegetation structure.
+    •   Raster predictors were prepared and extracted at the field sampling locations for subsequent statistical and
+        machine-learning analysis.
+    •   Vegetation-index predictors with inter-correlation greater than 0.95 were excluded to reduce redundancy and
+         multicollinearity.
+    •   The resulting spectral predictor set was used to compare machine-learning models for foliar nutrient
+        estimation.
+
+
+
+Machine-Learning Models
+•  Random Forest (RF)
+•   Support Vector Regression (SVM)
+•    Artificial Neural Network (ANN)
+•   Partial Least Squares Regression (PLSR)
+•   Extreme Gradient Boosting (XGBoost)
+•   Gradient Boosting Machine (GBM)
+
+
+
+Model Selection
+ Target                                      Key result in final submitted thesis
+ Leaf N                                               Spectral models: very low R²; soil-based RF R² = 0.17
+ Leaf P                                               Spectral models: XGBoost highest R² ≈ 0.09; soil-based RF
+                                                     R² = 0.55
+ Leaf K                                               Spectral models: ANN R² ≈ 0.10; soil-based RF R² = 0.52
+The submitted thesis reports nutrient-specific and model-specific results, with Random Forest generally performing
+strongly in the soil-to-leaf analysis and XGBoost showing the strongest spectral-variable result for Leaf P.
+
+
+
+
+
+                                      Abigail A. Adjetey Bisa / Research Portfolio/ 7
+=== PDF PAGE 8 ===
+PROJECT 1
+UAV Multispectral Remote Sensing and Machine
+Learning for Cocoa Nutrient Assessment
+
+Results and research contribution
+
+Research Output
+The modelling results demonstrated that relationships between UAV-derived spectral information and cocoa foliar
+nutrients varied by nutrient. Different algorithms therefore provided varying predictive performance for nitrogen,
+phosphorus and potassium. Phosphorus and potassium showed stronger predictive signals than nitrogen, while limited
+nutrient variability constrained the performance of spectral models. In the soil-to-leaf analysis, Random Forest
+produced the strongest fits for Leaf N, Leaf P and Leaf K (R² = 0.17, 0.55 and 0.52, respectively). For spectral-variable
+models, performance was generally weak: nitrogen predictions were close to zero R², XGBoost performed best for Leaf
+P (R² ≈ 0.09), and ANN had the highest R² for Leaf K (≈ 0.10), although with relatively high errors.
+
+
+
+
+
+Figure 2. Comparison of observed vs predicted foliar nutrient concentrations (LeafN, LeafP, LeafK) using three machine
+learning models: Random Forest (plots a, d, g), Support Vector Machine (plots b, e, h), and Artificial Neural Network (plots
+c, f, i).
+
+
+                                      Abigail A. Adjetey Bisa / Research Portfolio/ 8
+=== PDF PAGE 9 ===
+Figure 3. Comparison of model performance in predicting leaf nutrient concentrations using different algorithms (RF,
+XGBoost, SVM, and ANN) based on R- squared values, RMSE scores and MAE
+
+
+
+Research Contribution
+My contribution covered the UAV and field-data components, multispectral predictor preparation, feature screening,
+statistical analysis of soil–leaf nutrient relationships, comparative machine-learning modelling, and interpretation of
+spectral predictors and model behaviour. The work demonstrates how high-resolution Earth observation and AI can
+support more spatially informed approaches to crop nutrient assessment and management.
+
+
+
+
+
+                                      Abigail A. Adjetey Bisa / Research Portfolio/ 9
+=== PDF PAGE 10 ===
+PROJECT 2
+Geospatial Characterisation of Shade Canopy in
+Cocoa Agroforestry and Soil Resources
+
+Juaboso District, Ghana | Remote-sensing component under FRAME-Cocoa Project
+
+Research Context
+
+This is co-authored research which included field-based and GIS-driven characterisation of shade canopy in cocoa
+agroforestry farms within one of Ghana’s prime cocoa landscapes. Shade canopy in cocoa farms can yield its highest
+benefits when managed in an optimum range, however, can also be detrimental to cocoa productivity when it falls short
+or goes beyond that specific range. This work integrated remote sensing, field observations and mathematical
+optimisation.
+
+Data and Field Research
+
+•   Collected soil samples at multiple depths from cocoa farms across Juaboso District.
+•   Identified and measured canopy sizes of shade trees present within sampled farms.
+•  Conducted and supported laboratory analysis of soil properties.
+•   Characterised shade-tree cover and cocoa agroforestry structure.
+
+My Remote-Sensing Contribution
+In addition to the field data collection, I worked on the use of Sentinel-2-derived information to characterise cocoa farms
+according to shade level. The remote-sensing workflow used spectral, texture, and biophysical predictors and Random
+Forest modelling.
+
+Remote-Sensing Predictors
+•   Sentinel-2 imagery covering dry season observations.
+•   Spectral variables from Sentinel bands and vegetation indices.
+•   Texture variables derived using GLCM metrics.
+•   Biophysical variables including LAI, fAPAR, fCover, chlorophyll content and canopy water content.
+
+Classification Approach
+Random Forest modelling was used to predict continuous canopy-cover information, which was subsequently
+categorised into four shade levels; no shade, low shade, moderate shade (optimal), and high shade.
+
+
+
+
+
+                                      Abigail A. Adjetey Bisa / Research Portfolio/ 10
+=== PDF PAGE 11 ===
+Figure 4. Land Cover Map of the Juaboso Landscape including shade canopy variations of cocoa agroforestry farms
+within the landscape.
+
+
+
+Model Configuration
+•  Random Forest was used for supervised prediction of continuous canopy cover.
+•   Backwards feature elimination was applied to identify relevant predictors and reduce redundancy.
+•  Model performance was assessed using 10-fold cross-validation.
+
+
+My Contribution vs. Broader Study
+ My contribution                                      Broader study
+ Remote sensing / GIS processing and shade-level          Integration of field tree data and shade-tree species
+ classification                                           information
+ Sentinel-derived predictor development and Random     Mathematical optimisation and site-specific tree-
+ Forest analysis                                      combination recommendations
+ Spatial characterisation of cocoa shade conditions        Overall agroforestry management framework
+
+
+
+
+
+                                      Abigail A. Adjetey Bisa / Research Portfolio/ 11
+=== PDF PAGE 12 ===
+PROJECT 3
+Satellite Time-Series Classification for Deforestation-
+Free Cocoa Monitoring
+
+Deforestation-Free Cocoa Project | Ghana
+
+Research Context
+Within the Deforestation-Free Cocoa Project, I worked on the remote-sensing and GIS components supporting historical
+land-use/land-cover mapping across cocoa landscape hotspot intervention areas: Sefwi-Wiawso Bibiani, Asunafo-
+Asutifi and Juaboso-Bia. The project provided practical experience in using temporal Earth observation information
+rather than relying only on single-date imagery.
+
+My Role
+•   Led a team involved in field data collection for the mapping work.
+•   Supervised collection of training coordinates for historical years 2015, 2020 and 2024.
+•   Developed deep-learning and machine-learning models for satellite image classification using Python.
+•   Supported production of historical LULC information for the intervention landscapes.
+•   Constructed physical 3D landscape models for stakeholder communication.
+
+CNN Component
+
+A key part of my technical experience was applying a Convolutional Neural Network (CNN) to satellite image time-series
+classification. This provided direct experience applying deep learning to multi-temporal Earth observation data.
+
+Deep-Learning Workflow
+
+
+
+
+
+                                      Abigail A. Adjetey Bisa / Research Portfolio/ 12
+=== PDF PAGE 13 ===
+PROJECT 3
+Satellite Time-Series Classification for Deforestation-
+Free Cocoa Monitoring
+
+Outputs and significance
+
+Training and Reference Data
+The project involved systematic collection and preparation of field training/reference information to support historical
+classification. The project documentation records spatially distributed training-data collection and development of
+historical LULC maps.
+
+
+
+
+
+Figure 5. Time-series map displaying changes in landscape from 2015 to 2024.
+
+Research Significance
+The project expanded my experience from UAV-based crop assessment to satellite-scale environmental monitoring and
+from conventional machine learning to deep learning. It also strengthened my ability to connect field/reference data with
+multi-temporal satellite classification and equipped me with the skill of transforming maps into 3D landscape models.
+
+
+
+
+
+                                      Abigail A. Adjetey Bisa / Research Portfolio/ 13
+=== PDF PAGE 14 ===
+PROJECT 4
+Land-Use/Land-Cover Classification in Ghana's High
+Forest Zone
+
+Remote sensing, GIS and reference-data based classification
+
+Project Context
+This work originated as part of broader research led by my supervisor on forest and land-cover mapping in Ghana's High
+Forest Zone. Under this research, we sought to investigate which algorithm best distinguishes land use classes in a highly
+heterogenous landscape such as the high forest zone of Ghana.
+
+My Contribution
+•   Executed the assigned remote-sensing and GIS component.
+•   Prepared and analysed satellite imagery for land-cover classification.
+•  Worked with training/reference data for supervised classification.
+•   Produced and interpreted LULC classification outputs.
+•   Applied geospatial analysis to support the broader forest/landscape research.
+
+Technical Context
+The High Forest Zone research addresses forest mapping in a spectrally heterogeneous landscape and considers
+medium-resolution Landsat and Sentinel Earth observation datasets, including comparison of traditional machine
+learning classifiers and CNN-based deep learning.
+
+LULC Workflow
+•   Satellite imagery preparation and preprocessing.
+•   Preparation/use of training and reference data.
+•   Supervised land-cover classification.
+•   Accuracy assessment and spatial interpretation.
+
+
+
+
+
+                                      Abigail A. Adjetey Bisa / Research Portfolio/ 14
+=== PDF PAGE 15 ===
+PROJECT 4
+Land-Use/Land-Cover Classification in Ghana's High
+Forest Zone
+
+Classification Output
+
+
+
+
+
+Figure 6. Comparative spatial distribution of land use and land cover (LULC) classification across the Juaboso-Bia HIA
+using Random Forest (RF), Support Vector Machine (SVM), and Convolutional Neural Network (CNN) classifiers on
+LANDSAT 9 L2 imagery
+
+
+
+
+
+                                      Abigail A. Adjetey Bisa / Research Portfolio/ 15
+=== PDF PAGE 16 ===
+Publications & Research Outputs
+
+Peer-Reviewed Publication
+
+Ashiagbor, G., Essah, I.S., Baiden, P.P.K., Adjetey Bisa, A.A., et al. (2026). Modelling the number of shade tree species
+needed to reach the optimal canopy target in cocoa agroforestry systems. Agroforest Syst 100, 36 (2026).
+
+Manuscripts Under Review
+
+•   Ashiagbor, G., Ahorlu, O., Enyinful-Andoh, G., Adjetey Bisa, A. A., Essah, I. S., Tawiah, W. B., Yeboah, E., Mutegi, J.,
+    Mugi-Ngenga, E., Amouzou, K. A., & Oberthür, T. (2026). Shade Tree Structural Management Does Not Predict Soil
+   Chemical Quality or Cocoa Yield in Smallholder Agroforestry: Plot-Level Evidence from Ghana. (Manuscript No.
+    AGEE58523). — Under Review at Agriculture, Ecosystems and Environment
+
+Manuscript in Preparation
+
+Predicting Macronutrient Status in Mature Cocoa Using UAV Multispectral Imagery and Machine Learning — In
+Preparation
+
+MSc Thesis
+
+Predicting Macronutrient Levels in Cocoa Soils Using Multispectral Unmanned Aerial Vehicles (UAV) — Master of
+Science (MSc.) Geo-Information Science for Natural Resources Management, KNUST, 2025.
+
+Selected Research Outputs
+•  UAV multispectral orthomosaics and derived vegetation-index products.
+•  Cocoa foliar nutrient modelling outputs.
+•   Satellite time-series classification outputs.
+•   Sentinel-based cocoa shade classification maps.
+•   Land-use/land-cover and landscape classification products.
+
+
+
+
+
+                                      Abigail A. Adjetey Bisa / Research Portfolio/ 16
+=== PDF PAGE 17 ===
+Technical Capabilities
+
+Earth Observation
+Satellite remote sensing; UAV multispectral remote sensing; image preprocessing; vegetation indices; time-series
+analysis.
+
+GIS & Spatial Analysis
+ArcGIS Pro; QGIS; raster analysis; spatial analysis; kriging/interpolation; cartography.
+
+Artificial Intelligence & Machine Learning
+Convolutional Neural Networks (CNNs); Artificial Neural Networks (ANNs); Random Forest; XGBoost; Support Vector
+Machines; Gradient Boosting; PLSR.
+
+Programming & Analysis
+Python; R/RStudio; Google Colab.
+
+Remote Sensing Software
+SNAP; Agisoft Metashape.
+
+UAV / Field Research
+DJI Matrice 350 RTK; MicaSense RedEdge-P; field sampling; georeferenced observations; environmental and crop data
+collection.
+
+Links
+
+•   Repository:https://drive.google.com/drive/folders/1oQW2PkMrRqszJHe6Tyt9hNYEWxkXkR0M?usp=drive_link
+•   Published paper(s): https://doi.org/10.1007/s10457-025-01402-6
+•  Some scientific writings/ reports:
+    https://drive.google.com/drive/folders/1iTtz8tL972xv826KnH7IIDWEJrI1BXwJ?usp=drive_link
+
+
+
+
+
+                                      Abigail A. Adjetey Bisa / Research Portfolio/ 17
